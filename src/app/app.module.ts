@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
-import { ErrorComponent } from './error/error.component';
+import { ErrorComponent } from './pages/error/error.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FakeBackendInterceptor } from './core/interceptors/fakebackend.interceptor';
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
@@ -12,7 +12,6 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { AdminComponent } from './pages/admin/admin.component';
 import { OperatorComponent } from './pages/operator/operator.component';
 import { DoctorComponent } from './pages/doctor/doctor.component';
-import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { FooterComponent } from './footer/footer.component';
     AdminComponent,
     OperatorComponent,
     DoctorComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
