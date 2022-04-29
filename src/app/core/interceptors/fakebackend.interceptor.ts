@@ -8,14 +8,7 @@ import {
 } from '@angular/common/http';
 import { delay, dematerialize, materialize, mergeMap, Observable, of, throwError } from 'rxjs';
 import { User } from '../models/User';
-import { Role } from '../models/Role';
-
-const users: User[] = [
-  { id: 1, username: 'admin', password: 'admin', firstName: 'Admin', lastName: 'User', role: Role.Admin },
-  { id: 2, username: 'user', password: 'user', firstName: 'Normal', lastName: 'User', role: Role.Operator },
-  { id: 3, username: 'user2', password: 'user2', firstName: 'Normal', lastName: 'User', role: Role.Doctor },
-];
-
+import users from '../../../../mock/users.json';
 
 
 @Injectable()
