@@ -12,6 +12,8 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { AdminComponent } from './pages/admin/admin.component';
 import { OperatorComponent } from './pages/operator/operator.component';
 import { DoctorComponent } from './pages/doctor/doctor.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { DoctorComponent } from './pages/doctor/doctor.component';
     AdminComponent,
     OperatorComponent,
     DoctorComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
