@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-mytable',
@@ -10,10 +10,13 @@ export class MytableComponent implements OnInit {
   constructor() { }
 
   @Input()
-  data: any[] = [];
+  public data: any[] = [];
 
   @Input()
-  headers: string[] = [];
+  public headers: string[] = [];
+
+  @Output()
+  public delete = new EventEmitter();
 
   ngOnInit(): void {
   }
