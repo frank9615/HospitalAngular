@@ -1,0 +1,2002 @@
+[
+  {
+    "id": 1,
+    "doctorId": 44,
+    "patientId": 21,
+    "operatorId": 13,
+    "triageDate": "2019-02-05T23:27:30.802Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 2,
+    "doctorId": 39,
+    "patientId": 11,
+    "operatorId": 27,
+    "triageDate": "2021-12-24T11:39:15.850Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 3,
+    "doctorId": 33,
+    "patientId": 30,
+    "operatorId": 21,
+    "triageDate": "2017-10-13T16:37:43.754Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "RED"
+  },
+  {
+    "id": 4,
+    "doctorId": 22,
+    "patientId": 49,
+    "operatorId": 31,
+    "triageDate": "2019-02-07T06:16:32.676Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 5,
+    "doctorId": 10,
+    "patientId": 24,
+    "operatorId": 21,
+    "triageDate": "2019-06-07T04:53:07.623Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "RED"
+  },
+  {
+    "id": 6,
+    "doctorId": 22,
+    "patientId": 3,
+    "operatorId": 49,
+    "triageDate": "2020-10-10T15:58:18.637Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 7,
+    "doctorId": 16,
+    "patientId": 43,
+    "operatorId": 4,
+    "triageDate": "2017-07-03T05:32:46.899Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 8,
+    "doctorId": 39,
+    "patientId": 20,
+    "operatorId": 13,
+    "triageDate": "2020-06-17T02:01:21.428Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 9,
+    "doctorId": 12,
+    "patientId": 24,
+    "operatorId": 21,
+    "triageDate": "2018-03-02T16:36:59.632Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 10,
+    "doctorId": 44,
+    "patientId": 21,
+    "operatorId": 28,
+    "triageDate": "2018-04-11T22:52:18.232Z",
+    "state": true,
+    "notes": "",
+    "triageColor": "RED"
+  },
+  {
+    "id": 11,
+    "doctorId": 45,
+    "patientId": 32,
+    "operatorId": 17,
+    "triageDate": "2020-07-12T00:16:36.357Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 12,
+    "doctorId": 20,
+    "patientId": 25,
+    "operatorId": 37,
+    "triageDate": "2017-01-29T05:52:08.610Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "triageColor": "RED"
+  },
+  {
+    "id": 13,
+    "doctorId": 48,
+    "patientId": 39,
+    "operatorId": 49,
+    "triageDate": "2017-04-25T15:36:31.510Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 14,
+    "doctorId": 48,
+    "patientId": 38,
+    "operatorId": 4,
+    "triageDate": "2019-03-31T09:15:19.506Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 15,
+    "doctorId": 9,
+    "patientId": 39,
+    "operatorId": 27,
+    "triageDate": "2017-04-27T11:55:05.530Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 16,
+    "doctorId": 42,
+    "patientId": 45,
+    "operatorId": 49,
+    "triageDate": "2019-06-19T11:39:03.266Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 17,
+    "doctorId": 29,
+    "patientId": 31,
+    "operatorId": 25,
+    "triageDate": "2020-07-14T13:42:30.696Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 18,
+    "doctorId": 36,
+    "patientId": 24,
+    "operatorId": 27,
+    "triageDate": "2017-01-25T13:25:53.862Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 19,
+    "doctorId": 32,
+    "patientId": 33,
+    "operatorId": 30,
+    "triageDate": "2019-03-26T05:33:44.036Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 20,
+    "doctorId": 44,
+    "patientId": 4,
+    "operatorId": 21,
+    "triageDate": "2017-03-11T12:28:21.901Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "RED"
+  },
+  {
+    "id": 21,
+    "doctorId": 36,
+    "patientId": 41,
+    "operatorId": 31,
+    "triageDate": "2019-06-20T01:11:35.205Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 22,
+    "doctorId": 15,
+    "patientId": 21,
+    "operatorId": 27,
+    "triageDate": "2019-08-27T04:30:20.099Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "RED"
+  },
+  {
+    "id": 23,
+    "doctorId": 42,
+    "patientId": 43,
+    "operatorId": 30,
+    "triageDate": "2017-04-30T18:53:31.280Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 24,
+    "doctorId": 45,
+    "patientId": 20,
+    "operatorId": 28,
+    "triageDate": "2017-04-04T00:27:22.816Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "RED"
+  },
+  {
+    "id": 25,
+    "doctorId": 45,
+    "patientId": 31,
+    "operatorId": 4,
+    "triageDate": "2021-09-13T09:33:37.412Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "RED"
+  },
+  {
+    "id": 26,
+    "doctorId": 15,
+    "patientId": 1,
+    "operatorId": 30,
+    "triageDate": "2018-06-05T20:18:14.387Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "RED"
+  },
+  {
+    "id": 27,
+    "doctorId": 10,
+    "patientId": 47,
+    "operatorId": 28,
+    "triageDate": "2017-06-03T15:05:40.616Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 28,
+    "doctorId": 33,
+    "patientId": 44,
+    "operatorId": 49,
+    "triageDate": "2020-06-25T12:38:54.490Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 29,
+    "doctorId": 38,
+    "patientId": 37,
+    "operatorId": 37,
+    "triageDate": "2018-04-04T16:46:55.368Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 30,
+    "doctorId": 29,
+    "patientId": 14,
+    "operatorId": 25,
+    "triageDate": "2020-07-22T06:05:07.163Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 31,
+    "doctorId": 26,
+    "patientId": 50,
+    "operatorId": 49,
+    "triageDate": "2018-02-17T16:17:15.514Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 32,
+    "doctorId": 36,
+    "patientId": 32,
+    "operatorId": 17,
+    "triageDate": "2021-04-10T09:04:03.185Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 33,
+    "doctorId": 38,
+    "patientId": 29,
+    "operatorId": 28,
+    "triageDate": "2018-11-28T09:07:37.489Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 34,
+    "doctorId": 45,
+    "patientId": 42,
+    "operatorId": 27,
+    "triageDate": "2020-03-23T11:01:21.027Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 35,
+    "doctorId": 9,
+    "patientId": 44,
+    "operatorId": 25,
+    "triageDate": "2019-11-15T17:42:01.143Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 36,
+    "doctorId": 16,
+    "patientId": 19,
+    "operatorId": 30,
+    "triageDate": "2017-04-08T12:40:02.347Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 37,
+    "doctorId": 40,
+    "patientId": 22,
+    "operatorId": 27,
+    "triageDate": "2017-08-15T08:59:19.931Z",
+    "state": false,
+    "notes": "Lorem",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 38,
+    "doctorId": 9,
+    "patientId": 14,
+    "operatorId": 49,
+    "triageDate": "2021-03-28T00:51:54.170Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 39,
+    "doctorId": 2,
+    "patientId": 4,
+    "operatorId": 37,
+    "triageDate": "2018-11-17T00:26:10.535Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "RED"
+  },
+  {
+    "id": 40,
+    "doctorId": 20,
+    "patientId": 30,
+    "operatorId": 37,
+    "triageDate": "2019-01-07T01:16:42.864Z",
+    "state": false,
+    "notes": "",
+    "triageColor": "RED"
+  },
+  {
+    "id": 41,
+    "doctorId": 36,
+    "patientId": 46,
+    "operatorId": 21,
+    "triageDate": "2021-08-16T11:57:54.631Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 42,
+    "doctorId": 45,
+    "patientId": 12,
+    "operatorId": 49,
+    "triageDate": "2017-09-09T09:31:33.073Z",
+    "state": false,
+    "notes": "Lorem ipsum",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 43,
+    "doctorId": 43,
+    "patientId": 41,
+    "operatorId": 28,
+    "triageDate": "2019-04-12T15:32:01.798Z",
+    "state": true,
+    "notes": "Lorem ipsum",
+    "triageColor": "RED"
+  },
+  {
+    "id": 44,
+    "doctorId": 26,
+    "patientId": 6,
+    "operatorId": 30,
+    "triageDate": "2018-06-19T13:30:22.602Z",
+    "state": false,
+    "notes": "",
+    "triageColor": "RED"
+  },
+  {
+    "id": 45,
+    "doctorId": 2,
+    "patientId": 10,
+    "operatorId": 21,
+    "triageDate": "2021-11-21T06:36:31.310Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 46,
+    "doctorId": 44,
+    "patientId": 30,
+    "operatorId": 25,
+    "triageDate": "2019-01-19T07:15:02.048Z",
+    "state": false,
+    "notes": "Lorem ipsum",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 47,
+    "doctorId": 22,
+    "patientId": 19,
+    "operatorId": 4,
+    "triageDate": "2019-11-18T19:27:39.284Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 48,
+    "doctorId": 15,
+    "patientId": 3,
+    "operatorId": 14,
+    "triageDate": "2019-04-11T14:51:28.916Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 49,
+    "doctorId": 32,
+    "patientId": 44,
+    "operatorId": 28,
+    "triageDate": "2017-09-16T19:25:26.635Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 50,
+    "doctorId": 40,
+    "patientId": 30,
+    "operatorId": 4,
+    "triageDate": "2021-06-05T10:58:10.700Z",
+    "state": false,
+    "notes": "Lorem",
+    "triageColor": "RED"
+  },
+  {
+    "id": 51,
+    "doctorId": 44,
+    "patientId": 40,
+    "operatorId": 28,
+    "triageDate": "2020-08-18T01:04:48.594Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 52,
+    "doctorId": 44,
+    "patientId": 39,
+    "operatorId": 31,
+    "triageDate": "2021-11-10T16:54:19.391Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 53,
+    "doctorId": 38,
+    "patientId": 16,
+    "operatorId": 13,
+    "triageDate": "2019-08-10T13:59:15.218Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 54,
+    "doctorId": 20,
+    "patientId": 7,
+    "operatorId": 28,
+    "triageDate": "2022-03-30T02:03:00.834Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 55,
+    "doctorId": 23,
+    "patientId": 44,
+    "operatorId": 31,
+    "triageDate": "2018-08-09T09:04:50.381Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 56,
+    "doctorId": 40,
+    "patientId": 22,
+    "operatorId": 25,
+    "triageDate": "2018-02-20T08:59:43.171Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "RED"
+  },
+  {
+    "id": 57,
+    "doctorId": 26,
+    "patientId": 49,
+    "operatorId": 49,
+    "triageDate": "2019-01-11T17:29:59.263Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 58,
+    "doctorId": 20,
+    "patientId": 42,
+    "operatorId": 4,
+    "triageDate": "2017-12-12T02:05:59.255Z",
+    "state": false,
+    "notes": "Lorem",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 59,
+    "doctorId": 2,
+    "patientId": 14,
+    "operatorId": 25,
+    "triageDate": "2022-04-24T17:49:00.308Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 60,
+    "doctorId": 43,
+    "patientId": 46,
+    "operatorId": 30,
+    "triageDate": "2018-02-03T07:52:25.448Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 61,
+    "doctorId": 40,
+    "patientId": 40,
+    "operatorId": 28,
+    "triageDate": "2019-08-27T17:59:02.276Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 62,
+    "doctorId": 43,
+    "patientId": 10,
+    "operatorId": 21,
+    "triageDate": "2019-10-03T08:29:21.204Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 63,
+    "doctorId": 22,
+    "patientId": 16,
+    "operatorId": 21,
+    "triageDate": "2017-07-17T07:08:14.020Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+    "triageColor": "RED"
+  },
+  {
+    "id": 64,
+    "doctorId": 34,
+    "patientId": 35,
+    "operatorId": 14,
+    "triageDate": "2018-06-12T19:30:12.640Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 65,
+    "doctorId": 39,
+    "patientId": 43,
+    "operatorId": 17,
+    "triageDate": "2017-11-07T11:49:33.411Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 66,
+    "doctorId": 48,
+    "patientId": 12,
+    "operatorId": 31,
+    "triageDate": "2021-04-12T13:21:22.683Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "RED"
+  },
+  {
+    "id": 67,
+    "doctorId": 15,
+    "patientId": 41,
+    "operatorId": 25,
+    "triageDate": "2019-07-05T01:54:33.094Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "RED"
+  },
+  {
+    "id": 68,
+    "doctorId": 44,
+    "patientId": 30,
+    "operatorId": 21,
+    "triageDate": "2020-10-09T15:29:23.711Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 69,
+    "doctorId": 9,
+    "patientId": 9,
+    "operatorId": 37,
+    "triageDate": "2017-04-03T11:05:35.342Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "triageColor": "RED"
+  },
+  {
+    "id": 70,
+    "doctorId": 22,
+    "patientId": 39,
+    "operatorId": 28,
+    "triageDate": "2017-09-20T01:23:30.219Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 71,
+    "doctorId": 15,
+    "patientId": 10,
+    "operatorId": 4,
+    "triageDate": "2017-09-07T01:17:18.600Z",
+    "state": false,
+    "notes": "",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 72,
+    "doctorId": 20,
+    "patientId": 7,
+    "operatorId": 30,
+    "triageDate": "2018-09-26T11:28:08.337Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 73,
+    "doctorId": 40,
+    "patientId": 20,
+    "operatorId": 31,
+    "triageDate": "2021-11-24T08:22:10.193Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 74,
+    "doctorId": 12,
+    "patientId": 39,
+    "operatorId": 25,
+    "triageDate": "2021-08-08T00:02:54.332Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 75,
+    "doctorId": 34,
+    "patientId": 11,
+    "operatorId": 27,
+    "triageDate": "2017-12-16T12:38:02.171Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 76,
+    "doctorId": 38,
+    "patientId": 45,
+    "operatorId": 25,
+    "triageDate": "2018-11-02T16:13:37.336Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 77,
+    "doctorId": 45,
+    "patientId": 13,
+    "operatorId": 28,
+    "triageDate": "2020-03-08T01:52:30.794Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 78,
+    "doctorId": 15,
+    "patientId": 29,
+    "operatorId": 25,
+    "triageDate": "2021-04-16T13:09:25.822Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 79,
+    "doctorId": 48,
+    "patientId": 8,
+    "operatorId": 30,
+    "triageDate": "2017-10-20T12:59:14.486Z",
+    "state": true,
+    "notes": "",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 80,
+    "doctorId": 33,
+    "patientId": 6,
+    "operatorId": 27,
+    "triageDate": "2019-12-01T20:22:10.429Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 81,
+    "doctorId": 39,
+    "patientId": 50,
+    "operatorId": 49,
+    "triageDate": "2019-02-13T05:52:06.432Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 82,
+    "doctorId": 16,
+    "patientId": 17,
+    "operatorId": 28,
+    "triageDate": "2020-09-02T13:51:34.943Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 83,
+    "doctorId": 26,
+    "patientId": 47,
+    "operatorId": 4,
+    "triageDate": "2018-07-01T00:59:30.597Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 84,
+    "doctorId": 42,
+    "patientId": 22,
+    "operatorId": 30,
+    "triageDate": "2019-05-13T09:39:18.645Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    "triageColor": "RED"
+  },
+  {
+    "id": 85,
+    "doctorId": 39,
+    "patientId": 21,
+    "operatorId": 27,
+    "triageDate": "2021-08-03T22:24:28.733Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 86,
+    "doctorId": 38,
+    "patientId": 43,
+    "operatorId": 31,
+    "triageDate": "2020-09-13T21:24:29.179Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "RED"
+  },
+  {
+    "id": 87,
+    "doctorId": 16,
+    "patientId": 39,
+    "operatorId": 37,
+    "triageDate": "2017-05-11T13:38:43.556Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 88,
+    "doctorId": 43,
+    "patientId": 31,
+    "operatorId": 17,
+    "triageDate": "2021-04-20T04:40:06.862Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "RED"
+  },
+  {
+    "id": 89,
+    "doctorId": 15,
+    "patientId": 14,
+    "operatorId": 27,
+    "triageDate": "2021-01-25T09:42:46.284Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 90,
+    "doctorId": 15,
+    "patientId": 33,
+    "operatorId": 37,
+    "triageDate": "2018-04-09T16:05:56.382Z",
+    "state": true,
+    "notes": "",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 91,
+    "doctorId": 34,
+    "patientId": 39,
+    "operatorId": 13,
+    "triageDate": "2020-09-18T14:52:20.583Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 92,
+    "doctorId": 39,
+    "patientId": 32,
+    "operatorId": 30,
+    "triageDate": "2021-08-11T20:50:34.544Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 93,
+    "doctorId": 44,
+    "patientId": 10,
+    "operatorId": 14,
+    "triageDate": "2020-09-26T04:10:07.323Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 94,
+    "doctorId": 38,
+    "patientId": 50,
+    "operatorId": 37,
+    "triageDate": "2017-12-09T15:43:36.073Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 95,
+    "doctorId": 6,
+    "patientId": 31,
+    "operatorId": 37,
+    "triageDate": "2021-06-19T19:03:42.695Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 96,
+    "doctorId": 36,
+    "patientId": 45,
+    "operatorId": 28,
+    "triageDate": "2017-11-30T20:08:08.270Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 97,
+    "doctorId": 2,
+    "patientId": 1,
+    "operatorId": 30,
+    "triageDate": "2019-11-07T13:50:27.784Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 98,
+    "doctorId": 29,
+    "patientId": 3,
+    "operatorId": 49,
+    "triageDate": "2018-07-04T04:46:32.298Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 99,
+    "doctorId": 48,
+    "patientId": 29,
+    "operatorId": 17,
+    "triageDate": "2018-08-01T04:55:02.717Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "RED"
+  },
+  {
+    "id": 100,
+    "doctorId": 23,
+    "patientId": 28,
+    "operatorId": 14,
+    "triageDate": "2019-07-15T10:38:49.461Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 101,
+    "doctorId": 44,
+    "patientId": 15,
+    "operatorId": 21,
+    "triageDate": "2017-01-07T06:33:48.784Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+    "triageColor": "RED"
+  },
+  {
+    "id": 102,
+    "doctorId": 9,
+    "patientId": 38,
+    "operatorId": 25,
+    "triageDate": "2021-03-18T08:58:20.919Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 103,
+    "doctorId": 6,
+    "patientId": 50,
+    "operatorId": 17,
+    "triageDate": "2021-10-02T18:59:31.956Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 104,
+    "doctorId": 15,
+    "patientId": 26,
+    "operatorId": 27,
+    "triageDate": "2022-03-03T05:41:47.501Z",
+    "state": false,
+    "notes": "",
+    "triageColor": "RED"
+  },
+  {
+    "id": 105,
+    "doctorId": 39,
+    "patientId": 42,
+    "operatorId": 37,
+    "triageDate": "2020-02-29T00:23:27.278Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 106,
+    "doctorId": 22,
+    "patientId": 6,
+    "operatorId": 28,
+    "triageDate": "2022-03-28T17:49:33.520Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 107,
+    "doctorId": 44,
+    "patientId": 12,
+    "operatorId": 25,
+    "triageDate": "2019-02-23T11:43:03.377Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 108,
+    "doctorId": 38,
+    "patientId": 30,
+    "operatorId": 25,
+    "triageDate": "2018-06-05T06:55:50.379Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 109,
+    "doctorId": 16,
+    "patientId": 17,
+    "operatorId": 49,
+    "triageDate": "2021-12-02T12:36:24.339Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 110,
+    "doctorId": 9,
+    "patientId": 2,
+    "operatorId": 28,
+    "triageDate": "2022-03-01T21:59:14.242Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 111,
+    "doctorId": 20,
+    "patientId": 1,
+    "operatorId": 13,
+    "triageDate": "2017-06-08T13:59:33.570Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 112,
+    "doctorId": 40,
+    "patientId": 33,
+    "operatorId": 30,
+    "triageDate": "2018-09-03T15:13:25.577Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 113,
+    "doctorId": 33,
+    "patientId": 13,
+    "operatorId": 28,
+    "triageDate": "2018-12-27T21:13:13.801Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 114,
+    "doctorId": 16,
+    "patientId": 17,
+    "operatorId": 25,
+    "triageDate": "2021-01-06T10:48:50.123Z",
+    "state": false,
+    "notes": "",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 115,
+    "doctorId": 40,
+    "patientId": 3,
+    "operatorId": 25,
+    "triageDate": "2021-03-03T19:49:30.638Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 116,
+    "doctorId": 48,
+    "patientId": 1,
+    "operatorId": 37,
+    "triageDate": "2022-01-14T07:40:39.292Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 117,
+    "doctorId": 44,
+    "patientId": 8,
+    "operatorId": 31,
+    "triageDate": "2019-05-01T10:36:30.418Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 118,
+    "doctorId": 2,
+    "patientId": 30,
+    "operatorId": 14,
+    "triageDate": "2019-03-10T05:54:27.456Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 119,
+    "doctorId": 16,
+    "patientId": 25,
+    "operatorId": 4,
+    "triageDate": "2020-02-04T05:26:40.801Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "RED"
+  },
+  {
+    "id": 120,
+    "doctorId": 40,
+    "patientId": 48,
+    "operatorId": 49,
+    "triageDate": "2019-06-12T15:46:32.975Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 121,
+    "doctorId": 40,
+    "patientId": 1,
+    "operatorId": 28,
+    "triageDate": "2022-03-28T17:02:32.702Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 122,
+    "doctorId": 2,
+    "patientId": 15,
+    "operatorId": 27,
+    "triageDate": "2021-07-14T08:51:24.741Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 123,
+    "doctorId": 16,
+    "patientId": 16,
+    "operatorId": 49,
+    "triageDate": "2019-04-15T10:25:55.463Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 124,
+    "doctorId": 15,
+    "patientId": 8,
+    "operatorId": 31,
+    "triageDate": "2017-04-21T19:59:13.288Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 125,
+    "doctorId": 26,
+    "patientId": 50,
+    "operatorId": 49,
+    "triageDate": "2019-04-15T16:28:49.852Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 126,
+    "doctorId": 45,
+    "patientId": 9,
+    "operatorId": 49,
+    "triageDate": "2020-07-14T02:34:50.250Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 127,
+    "doctorId": 12,
+    "patientId": 10,
+    "operatorId": 31,
+    "triageDate": "2019-03-07T16:54:27.442Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 128,
+    "doctorId": 39,
+    "patientId": 7,
+    "operatorId": 21,
+    "triageDate": "2022-03-09T06:28:00.720Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 129,
+    "doctorId": 22,
+    "patientId": 29,
+    "operatorId": 31,
+    "triageDate": "2020-02-10T19:07:06.197Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 130,
+    "doctorId": 15,
+    "patientId": 23,
+    "operatorId": 14,
+    "triageDate": "2018-12-29T13:13:01.000Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 131,
+    "doctorId": 26,
+    "patientId": 37,
+    "operatorId": 8,
+    "triageDate": "2019-12-24T19:56:57.472Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 132,
+    "doctorId": 43,
+    "patientId": 23,
+    "operatorId": 21,
+    "triageDate": "2021-09-07T21:15:58.356Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 133,
+    "doctorId": 42,
+    "patientId": 8,
+    "operatorId": 21,
+    "triageDate": "2019-08-18T13:26:14.385Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "RED"
+  },
+  {
+    "id": 134,
+    "doctorId": 48,
+    "patientId": 26,
+    "operatorId": 17,
+    "triageDate": "2018-10-06T01:24:49.251Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 135,
+    "doctorId": 2,
+    "patientId": 11,
+    "operatorId": 21,
+    "triageDate": "2021-11-05T04:18:43.773Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 136,
+    "doctorId": 48,
+    "patientId": 40,
+    "operatorId": 17,
+    "triageDate": "2017-03-13T00:39:44.557Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 137,
+    "doctorId": 43,
+    "patientId": 3,
+    "operatorId": 27,
+    "triageDate": "2021-12-01T14:13:22.050Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 138,
+    "doctorId": 15,
+    "patientId": 10,
+    "operatorId": 4,
+    "triageDate": "2018-02-13T12:00:46.902Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+    "triageColor": "RED"
+  },
+  {
+    "id": 139,
+    "doctorId": 48,
+    "patientId": 27,
+    "operatorId": 25,
+    "triageDate": "2019-03-06T06:06:53.914Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 140,
+    "doctorId": 20,
+    "patientId": 5,
+    "operatorId": 4,
+    "triageDate": "2018-07-23T12:54:52.750Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 141,
+    "doctorId": 33,
+    "patientId": 11,
+    "operatorId": 28,
+    "triageDate": "2018-09-30T18:56:07.273Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit",
+    "triageColor": "RED"
+  },
+  {
+    "id": 142,
+    "doctorId": 22,
+    "patientId": 12,
+    "operatorId": 13,
+    "triageDate": "2022-01-30T16:43:09.261Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 143,
+    "doctorId": 45,
+    "patientId": 29,
+    "operatorId": 30,
+    "triageDate": "2017-10-10T13:52:18.941Z",
+    "state": true,
+    "notes": "",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 144,
+    "doctorId": 12,
+    "patientId": 29,
+    "operatorId": 31,
+    "triageDate": "2020-06-29T22:48:32.662Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 145,
+    "doctorId": 12,
+    "patientId": 41,
+    "operatorId": 14,
+    "triageDate": "2017-09-11T03:19:49.079Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 146,
+    "doctorId": 22,
+    "patientId": 3,
+    "operatorId": 30,
+    "triageDate": "2020-09-28T10:11:40.655Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "RED"
+  },
+  {
+    "id": 147,
+    "doctorId": 12,
+    "patientId": 17,
+    "operatorId": 17,
+    "triageDate": "2017-02-15T09:23:54.553Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 148,
+    "doctorId": 26,
+    "patientId": 32,
+    "operatorId": 8,
+    "triageDate": "2017-11-25T03:50:46.117Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 149,
+    "doctorId": 32,
+    "patientId": 25,
+    "operatorId": 14,
+    "triageDate": "2020-02-20T23:41:26.065Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 150,
+    "doctorId": 12,
+    "patientId": 50,
+    "operatorId": 49,
+    "triageDate": "2021-07-27T02:02:57.451Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit",
+    "triageColor": "RED"
+  },
+  {
+    "id": 151,
+    "doctorId": 34,
+    "patientId": 17,
+    "operatorId": 37,
+    "triageDate": "2018-09-11T23:56:30.037Z",
+    "state": false,
+    "notes": "Lorem ipsum",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 152,
+    "doctorId": 15,
+    "patientId": 3,
+    "operatorId": 37,
+    "triageDate": "2018-05-29T13:15:54.126Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 153,
+    "doctorId": 9,
+    "patientId": 13,
+    "operatorId": 8,
+    "triageDate": "2017-08-21T03:56:01.484Z",
+    "state": true,
+    "notes": "Lorem ipsum",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 154,
+    "doctorId": 48,
+    "patientId": 10,
+    "operatorId": 37,
+    "triageDate": "2020-11-05T07:08:11.442Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 155,
+    "doctorId": 9,
+    "patientId": 48,
+    "operatorId": 49,
+    "triageDate": "2018-12-25T03:22:31.515Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 156,
+    "doctorId": 42,
+    "patientId": 5,
+    "operatorId": 28,
+    "triageDate": "2018-09-20T06:39:10.256Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "RED"
+  },
+  {
+    "id": 157,
+    "doctorId": 48,
+    "patientId": 6,
+    "operatorId": 13,
+    "triageDate": "2019-06-11T11:18:18.469Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 158,
+    "doctorId": 43,
+    "patientId": 39,
+    "operatorId": 4,
+    "triageDate": "2019-02-07T09:14:30.365Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 159,
+    "doctorId": 38,
+    "patientId": 6,
+    "operatorId": 21,
+    "triageDate": "2021-12-26T13:26:53.560Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 160,
+    "doctorId": 22,
+    "patientId": 15,
+    "operatorId": 14,
+    "triageDate": "2021-01-12T03:24:32.151Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 161,
+    "doctorId": 16,
+    "patientId": 45,
+    "operatorId": 17,
+    "triageDate": "2017-11-24T21:23:21.057Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 162,
+    "doctorId": 43,
+    "patientId": 30,
+    "operatorId": 13,
+    "triageDate": "2020-04-22T03:50:54.298Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "RED"
+  },
+  {
+    "id": 163,
+    "doctorId": 44,
+    "patientId": 27,
+    "operatorId": 21,
+    "triageDate": "2019-10-14T11:07:22.424Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 164,
+    "doctorId": 20,
+    "patientId": 42,
+    "operatorId": 17,
+    "triageDate": "2020-02-10T02:09:26.924Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "triageColor": "RED"
+  },
+  {
+    "id": 165,
+    "doctorId": 23,
+    "patientId": 8,
+    "operatorId": 27,
+    "triageDate": "2022-04-13T03:34:17.944Z",
+    "state": false,
+    "notes": "Lorem ipsum",
+    "triageColor": "RED"
+  },
+  {
+    "id": 166,
+    "doctorId": 20,
+    "patientId": 8,
+    "operatorId": 21,
+    "triageDate": "2017-04-29T23:39:35.206Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 167,
+    "doctorId": 44,
+    "patientId": 33,
+    "operatorId": 4,
+    "triageDate": "2017-10-22T14:21:40.414Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 168,
+    "doctorId": 42,
+    "patientId": 44,
+    "operatorId": 37,
+    "triageDate": "2021-03-11T13:34:00.516Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 169,
+    "doctorId": 26,
+    "patientId": 11,
+    "operatorId": 28,
+    "triageDate": "2018-05-31T13:57:25.788Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 170,
+    "doctorId": 10,
+    "patientId": 11,
+    "operatorId": 8,
+    "triageDate": "2020-03-01T23:39:28.322Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 171,
+    "doctorId": 38,
+    "patientId": 38,
+    "operatorId": 30,
+    "triageDate": "2020-09-02T20:09:30.194Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 172,
+    "doctorId": 9,
+    "patientId": 38,
+    "operatorId": 17,
+    "triageDate": "2019-10-03T20:55:22.247Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 173,
+    "doctorId": 48,
+    "patientId": 25,
+    "operatorId": 27,
+    "triageDate": "2019-10-23T05:04:50.937Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 174,
+    "doctorId": 38,
+    "patientId": 19,
+    "operatorId": 4,
+    "triageDate": "2019-07-26T08:13:46.201Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 175,
+    "doctorId": 44,
+    "patientId": 4,
+    "operatorId": 21,
+    "triageDate": "2017-10-18T08:50:26.197Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "RED"
+  },
+  {
+    "id": 176,
+    "doctorId": 48,
+    "patientId": 42,
+    "operatorId": 17,
+    "triageDate": "2018-03-01T00:15:34.323Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "RED"
+  },
+  {
+    "id": 177,
+    "doctorId": 20,
+    "patientId": 33,
+    "operatorId": 27,
+    "triageDate": "2017-01-09T14:35:44.235Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 178,
+    "doctorId": 12,
+    "patientId": 31,
+    "operatorId": 30,
+    "triageDate": "2017-09-07T18:07:44.023Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "RED"
+  },
+  {
+    "id": 179,
+    "doctorId": 20,
+    "patientId": 37,
+    "operatorId": 21,
+    "triageDate": "2017-08-31T23:27:34.755Z",
+    "state": false,
+    "notes": "",
+    "triageColor": "RED"
+  },
+  {
+    "id": 180,
+    "doctorId": 15,
+    "patientId": 26,
+    "operatorId": 13,
+    "triageDate": "2019-06-24T09:06:44.652Z",
+    "state": true,
+    "notes": "Lorem",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 181,
+    "doctorId": 43,
+    "patientId": 3,
+    "operatorId": 17,
+    "triageDate": "2022-02-02T10:08:17.182Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 182,
+    "doctorId": 9,
+    "patientId": 30,
+    "operatorId": 27,
+    "triageDate": "2018-11-03T21:11:51.544Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 183,
+    "doctorId": 2,
+    "patientId": 6,
+    "operatorId": 27,
+    "triageDate": "2017-09-24T06:36:04.781Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    "triageColor": "RED"
+  },
+  {
+    "id": 184,
+    "doctorId": 42,
+    "patientId": 10,
+    "operatorId": 37,
+    "triageDate": "2020-08-28T08:47:12.987Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 185,
+    "doctorId": 38,
+    "patientId": 25,
+    "operatorId": 25,
+    "triageDate": "2019-09-27T06:33:14.287Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 186,
+    "doctorId": 45,
+    "patientId": 44,
+    "operatorId": 21,
+    "triageDate": "2021-08-12T23:12:47.448Z",
+    "state": true,
+    "notes": "",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 187,
+    "doctorId": 2,
+    "patientId": 39,
+    "operatorId": 13,
+    "triageDate": "2018-12-16T00:55:36.608Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 188,
+    "doctorId": 40,
+    "patientId": 24,
+    "operatorId": 25,
+    "triageDate": "2020-05-06T17:19:03.665Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "triageColor": "RED"
+  },
+  {
+    "id": 189,
+    "doctorId": 40,
+    "patientId": 38,
+    "operatorId": 4,
+    "triageDate": "2022-02-02T17:21:37.029Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 190,
+    "doctorId": 33,
+    "patientId": 47,
+    "operatorId": 8,
+    "triageDate": "2019-04-21T13:01:55.551Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "RED"
+  },
+  {
+    "id": 191,
+    "doctorId": 36,
+    "patientId": 26,
+    "operatorId": 31,
+    "triageDate": "2017-12-16T06:24:36.076Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 192,
+    "doctorId": 2,
+    "patientId": 8,
+    "operatorId": 37,
+    "triageDate": "2020-04-15T06:53:21.929Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 193,
+    "doctorId": 42,
+    "patientId": 1,
+    "operatorId": 30,
+    "triageDate": "2021-04-23T12:07:21.584Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 194,
+    "doctorId": 10,
+    "patientId": 27,
+    "operatorId": 25,
+    "triageDate": "2020-01-22T12:59:41.623Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "triageColor": "RED"
+  },
+  {
+    "id": 195,
+    "doctorId": 10,
+    "patientId": 3,
+    "operatorId": 25,
+    "triageDate": "2019-08-11T05:38:14.079Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 196,
+    "doctorId": 15,
+    "patientId": 7,
+    "operatorId": 30,
+    "triageDate": "2019-07-26T12:38:38.697Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 197,
+    "doctorId": 22,
+    "patientId": 1,
+    "operatorId": 31,
+    "triageDate": "2020-04-20T11:41:22.770Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 198,
+    "doctorId": 20,
+    "patientId": 42,
+    "operatorId": 31,
+    "triageDate": "2020-09-18T20:02:47.583Z",
+    "state": false,
+    "notes": "Lorem ipsum",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 199,
+    "doctorId": 20,
+    "patientId": 40,
+    "operatorId": 28,
+    "triageDate": "2018-07-28T22:22:48.376Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "RED"
+  },
+  {
+    "id": 200,
+    "doctorId": 2,
+    "patientId": 22,
+    "operatorId": 31,
+    "triageDate": "2021-07-18T09:59:48.021Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur",
+    "triageColor": "BLACK"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "doctorId": 44,
+    "patientId": 30,
+    "operatorId": 13,
+    "triageDate": "2020-06-28T21:12:55.141Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+    "triageColor": "YELLOW"
+  },
+  {
+    "id": 2,
+    "doctorId": 43,
+    "patientId": 41,
+    "operatorId": 8,
+    "triageDate": "2019-10-21T07:41:25.745Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+    "triageColor": "RED"
+  },
+  {
+    "id": 3,
+    "doctorId": 9,
+    "patientId": 24,
+    "operatorId": 30,
+    "triageDate": "2018-03-15T17:52:01.133Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 4,
+    "doctorId": 26,
+    "patientId": 28,
+    "operatorId": 25,
+    "triageDate": "2019-02-11T02:14:35.242Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 5,
+    "doctorId": 29,
+    "patientId": 41,
+    "operatorId": 49,
+    "triageDate": "2018-11-21T09:24:01.186Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "triageColor": "WHITE"
+  },
+  {
+    "id": 6,
+    "doctorId": 23,
+    "patientId": 30,
+    "operatorId": 28,
+    "triageDate": "2021-06-05T21:12:46.481Z",
+    "state": true,
+    "notes": "Lorem ipsum",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 7,
+    "doctorId": 22,
+    "patientId": 38,
+    "operatorId": 17,
+    "triageDate": "2021-08-24T23:35:37.295Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut",
+    "triageColor": "BLACK"
+  },
+  {
+    "id": 8,
+    "doctorId": 48,
+    "patientId": 14,
+    "operatorId": 8,
+    "triageDate": "2022-02-09T23:17:27.740Z",
+    "state": false,
+    "notes": "Lorem ipsum dolor sit amet,",
+    "triageColor": "GREEN"
+  },
+  {
+    "id": 9,
+    "doctorId": 6,
+    "patientId": 6,
+    "operatorId": 13,
+    "triageDate": "2017-01-11T20:48:11.561Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+    "triageColor": "RED"
+  },
+  {
+    "id": 10,
+    "doctorId": 38,
+    "patientId": 12,
+    "operatorId": 13,
+    "triageDate": "2017-05-14T20:20:58.895Z",
+    "state": true,
+    "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "triageColor": "BLACK"
+  }
+]
