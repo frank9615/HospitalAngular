@@ -34,13 +34,12 @@ export class FakeBackendInterceptor implements HttpInterceptor {
     });
   }
 
-
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     return of(null).pipe(mergeMap(() => {
 
       //Gestire con uno switch case
 
-      //User Authentication
+      //User Authentication✅
       if (request.url.endsWith('/users/authenticate') && request.method === 'POST') {
         const user = users.find((x: User) => x.username === request.body.username && x.password === request.body.password);
         if (user) {
@@ -57,22 +56,22 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           throwError(() => new Error('Username or password is incorrect'))
         }
       }
-      //Get All Patients
+      //Get All Patients✅
       if (request.url.endsWith('/patients') && request.method === 'GET') {
         return of(new HttpResponse({ status: 200, body: patients }));
       }
-      //Get All Triages
+      //Get All Triages✅
       if (request.url.endsWith('/triages') && request.method === 'GET') {
         return of(new HttpResponse({ status: 200, body: triages }));
       }
-      //Get All Users
+      //Get All Users✅
       if (request.url.endsWith('/users') && request.method === 'GET') {
         //Map result removing password
         const usersResponse = this.usersWOP;
         return of(new HttpResponse({ status: 200, body: usersResponse }));
       }
 
-      // Get User by Id
+      // Get User by Id✅
       if (request.url.match(/\/users\/\d+$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
@@ -91,7 +90,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         }
       }
 
-      //Get Patient By Id
+      //Get Patient By Id✅
       if (request.url.match(/\/patients\/\d+$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
@@ -110,7 +109,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           return throwError(() => new Error('Patient not found'));
         }
       }
-      // Get Triages by Id
+      // Get Triages by Id✅
       if (request.url.match(/\/triages\/\d+$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
@@ -131,8 +130,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           return throwError(() => new Error('Triage not found'));
         }
       }
-      //Get Triages Associated Doctors
-      if (request.url.match(/\/triages\/\d+\/doctors$/) && request.method === 'GET') {
+      //Get Triages Associated Doctors✅
+      if (request.url.match(/\/triages\/\d+\/doctor$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 2]);
         const triageAssociated = triages.filter((x: any) => x.doctorId === id);
@@ -142,8 +141,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           return throwError(() => new Error('Triage not found'));
         }
       }
-      //Get Triages Associated Operators
-      if (request.url.match(/\/triages\/\d+\/operators$/) && request.method === 'GET') {
+      //Get Triages Associated Operators✅
+      if (request.url.match(/\/triages\/\d+\/operator$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 2]);
         const triageAssociated = triages.filter((x: any) => x.operatorId === id);
@@ -153,8 +152,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           return throwError(() => new Error('Triage not found'));
         }
       }
-      //Get Triages Associated Patients
-      if (request.url.match(/\/triages\/\d+\/patients$/) && request.method === 'GET') {
+      //Get Triages Associated Patients✅
+      if (request.url.match(/\/triages\/\d+\/patient$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 2]);
         const triageAssociated = triages.filter((x: any) => x.patientId === id);
@@ -164,10 +163,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           return throwError(() => new Error('Triage not found'));
         }
       }
-      //Get Doctors
-      if (request.url.match(/\/doctors$/) && request.method === 'GET') {
-        const urlParts = request.url.split('/');
-        const id = parseInt(urlParts[urlParts.length - 1]);
+      //Get Doctors✅
+      if (request.url.match(/\/users\/doctors$/) && request.method === 'GET') {
         const doctors = this.usersWOP.filter((x) => { return x.role === Role.Doctor });
         if (doctors) {
           return of(new HttpResponse({ status: 200, body: doctors }));
@@ -176,10 +173,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         }
       }
 
-      //Get Operators
-      if (request.url.match(/\/operators$/) && request.method === 'GET') {
-        const urlParts = request.url.split('/');
-        const id = parseInt(urlParts[urlParts.length - 1]);
+      //Get Operators✅
+      if (request.url.match(/\/users\/operators$/) && request.method === 'GET') {
         const operators = this.usersWOP.filter((x) => { return x.role === Role.Operator });
         if (operators) {
           return of(new HttpResponse({ status: 200, body: operators }));
@@ -188,10 +183,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         }
       }
 
-      //Get Administrators
-      if (request.url.match(/\/administrators$/) && request.method === 'GET') {
-        const urlParts = request.url.split('/');
-        const id = parseInt(urlParts[urlParts.length - 1]);
+      //Get Administrators✅
+      if (request.url.match(/\/users\/administrators$/) && request.method === 'GET') {
         const administrator = this.usersWOP.filter((x) => { return x.role === Role.Admin });
         if (administrator) {
           return of(new HttpResponse({ status: 200, body: administrator }));
@@ -200,33 +193,27 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         }
       }
 
-      // Add User (only for Admin)
-      if (request.url.match(/\/addusers$/) && request.method === 'POST') {
-        const urlParts = request.url.split('/');
-        const id = parseInt(urlParts[urlParts.length - 1]);
+      // Add User (only for Admin)✅
+      if (request.url.match(/\/adduser$/) && request.method === 'POST') {
         const user = request.body;
         this.usersWOP.push(user);
         return of(new HttpResponse({ status: 200, body: user }));
       }
 
-      //Add Patient (only for Operator)
-      if (request.url.match(/\/addpatients$/) && request.method === 'POST') {
-        const urlParts = request.url.split('/');
-        const id = parseInt(urlParts[urlParts.length - 1]);
+      //Add Patient (only for Operator)✅
+      if (request.url.match(/\/addpatient$/) && request.method === 'POST') {
         const patient = request.body;
         patients.push(patient);
         return of(new HttpResponse({ status: 200, body: patient }));
       }
-      //Add Triage
-      if (request.url.match(/\/addtriages$/) && request.method === 'POST') {
-        const urlParts = request.url.split('/');
-        const id = parseInt(urlParts[urlParts.length - 1]);
+      //Add Triage✅
+      if (request.url.match(/\/addtriage$/) && request.method === 'POST') {
         const triage = request.body;
         triages.push(triage);
         return of(new HttpResponse({ status: 200, body: triage }));
       }
-      // Update User (only for Admin)
-      if (request.url.match(/\/updateusers$/) && request.method === 'PUT') {
+      // Update User (only for Admin)✅
+      if (request.url.match(/\/updateuser\/\d+$/) && request.method === 'PUT') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
         const user = request.body;
@@ -238,8 +225,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           return throwError(() => new Error('User not found'));
         }
       }
-      // Update Patient (only for Operator )
-      if (request.url.match(/\/updatepatients$/) && request.method === 'PUT') {
+      // Update Patient (only for Operator )✅
+      if (request.url.match(/\/updatepatient\/\d+$/) && request.method === 'PUT') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
         const patient = request.body;
@@ -251,8 +238,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           return throwError(() => new Error('Patient not found'));
         }
       }
-      // Update Triage (only for Operator )
-      if (request.url.match(/\/updatetriages$/) && request.method === 'PUT') {
+      // Update Triage (only for Operator )✅
+      if (request.url.match(/\/updatetriage\/\d+$/) && request.method === 'PUT') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
         const triage = request.body;
@@ -265,8 +252,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         }
       }
 
-      // Delete User (only for Admin)
-      if (request.url.match(/\/deleteusers$/) && request.method === 'DELETE') {
+      // Delete User (only for Admin)✅
+      if (request.url.match(/\/deleteuser\/\d+$/) && request.method === 'DELETE') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
         const index = this.usersWOP.findIndex((x) => x.id === id);
@@ -277,8 +264,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           return throwError(() => new Error('User not found'));
         }
       }
-      // Delete Patient (only for Operator)
-      if (request.url.match(/\/deletepatients$/) && request.method === 'DELETE') {
+      // Delete Patient (only for Operator)✅
+      if (request.url.match(/\/deletepatient\/\d+$/) && request.method === 'DELETE') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
         const index = patients.findIndex((x: Patient) => x.id === id);
@@ -290,8 +277,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         }
       }
 
-      // Delete Triage (only for Operator)
-      if (request.url.match(/\/deletetriages$/) && request.method === 'DELETE') {
+      // Delete Triage (only for Operator)✅
+      if (request.url.match(/\/deletetriage\/\d+$/) && request.method === 'DELETE') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
         const index = triages.findIndex((x: Triage) => x.id === id);
