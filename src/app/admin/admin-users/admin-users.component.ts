@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { NavModel } from 'src/app/shared/nav/nav.model';
 import { User } from 'src/app/core/models/User';
 import { UsersService } from 'src/app/core/services/users.service';
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  selector: 'app-admin-users',
+  templateUrl: './admin-users.component.html',
+  styleUrls: ['./admin-users.component.css']
 })
-export class AdminComponent implements OnInit {
+export class AdminUsersComponent implements OnInit {
 
   usersList: User[] = [];
   headersUsersList: string[] = [];
 
-  constructor(private userService: UsersService) { }
+  constructor(private userService: UsersService) {
+  }
 
   ngOnInit(): void {
     this.userService.getAllUsers().subscribe(

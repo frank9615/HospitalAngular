@@ -9,11 +9,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FakeBackendInterceptor } from './core/interceptors/fakebackend.interceptor';
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
-import { AdminComponent } from './pages/admin/admin.component';
 import { OperatorComponent } from './pages/operator/operator.component';
 import { DoctorComponent } from './pages/doctor/doctor.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { MytableComponent } from './components/mytable/mytable.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -21,17 +19,15 @@ import { MytableComponent } from './components/mytable/mytable.component';
     AppComponent,
     LoginComponent,
     ErrorComponent,
-    AdminComponent,
     OperatorComponent,
-    DoctorComponent,
-    FooterComponent,
-    MytableComponent,
+    DoctorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    SharedModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
