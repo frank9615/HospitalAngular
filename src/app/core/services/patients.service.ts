@@ -18,6 +18,10 @@ export class PatientsService {
     return this.http.get<Patient>(`/patients/${id}`);
   }
 
+  getPatientByCf(patientCf: string): Observable<Patient> {
+    return this.http.get<Patient>(`/patients/cf/${patientCf}`);
+  }
+
   addPatient(patient: Patient): Observable<Patient> {
     return this.http.post<Patient>('/addpatient', patient);
   }

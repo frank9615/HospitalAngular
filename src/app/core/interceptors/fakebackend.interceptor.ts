@@ -34,6 +34,25 @@ export class FakeBackendInterceptor implements HttpInterceptor {
     });
   }
 
+  //Ipotizzo che i dati mock non siano ordinati
+  private getLastPatientId(): number {
+    return patients.reduce((max: number, p: Patient) => {
+      if (p.id) {
+        return p.id > max ? p.id : max, 0;
+      }
+      return 0;
+    });
+  }
+
+  private getLastTriageId(): number {
+    return triages.reduce((max: number, t: Triage) => {
+      if (t.id) {
+        return t.id > max ? t.id : max, 0;
+      }
+      return 0;
+    });
+  }
+
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     return of(null).pipe(mergeMap(() => {
 
@@ -202,13 +221,17 @@ export class FakeBackendInterceptor implements HttpInterceptor {
 
       //Add Patient (only for Operator)✅
       if (request.url.match(/\/addpatient$/) && request.method === 'POST') {
-        const patient = request.body;
+        let patient = request.body;
+        patient.id = this.getLastPatientId() + 1;
+        patient.registrationDate = new Date();
         patients.push(patient);
         return of(new HttpResponse({ status: 200, body: patient }));
       }
       //Add Triage✅
       if (request.url.match(/\/addtriage$/) && request.method === 'POST') {
         const triage = request.body;
+        triage.id = this.getLastTriageId() + 1;
+        triage.triageDate = new Date();
         triages.push(triage);
         return of(new HttpResponse({ status: 200, body: triage }));
       }

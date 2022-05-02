@@ -9,8 +9,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FakeBackendInterceptor } from './core/interceptors/fakebackend.interceptor';
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
-import { OperatorComponent } from './pages/operator/operator.component';
-import { DoctorComponent } from './pages/doctor/doctor.component';
 import { SharedModule } from './shared/shared.module';
 
 
@@ -19,8 +17,6 @@ import { SharedModule } from './shared/shared.module';
     AppComponent,
     LoginComponent,
     ErrorComponent,
-    OperatorComponent,
-    DoctorComponent
   ],
   imports: [
     BrowserModule,

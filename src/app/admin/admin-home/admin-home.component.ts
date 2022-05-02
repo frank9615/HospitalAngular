@@ -12,7 +12,7 @@ export class AdminHomeComponent implements OnInit {
   navbarlinks: NavModel[] = [];
   titlelink: string;
 
-  constructor(private route: Router,) {
+  constructor(private route: Router) {
     this.navbarlinks.push({ header: "Utenti", link: "users" });
     this.navbarlinks.push({ header: "Pazienti", link: "patients" });
     this.navbarlinks.push({ header: "Triage", link: "triages" });

@@ -1,0 +1,43 @@
+<div class="col-md-4 col-md-offset-4">
+  <h1>Nuovo Paziente</h1>
+  <form (ngSubmit)="onSubmit()" #patientForm="ngForm">
+
+    <div class="form-group">
+      <label for="cf">Codice Fiscale</label>
+      <input type="text" class="form-control" id="cf" required [(ngModel)]="model.cf" name="cf" #cf="ngModel">
+      <div [hidden]="cf.valid || cf.pristine" class="alert alert-danger">
+        Codife fiscale obbligatorio
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="firstName">Nome</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="model.firstName" name="firstName"
+        #name="ngModel">
+      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+        Nome obbligatorio
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Cognome</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="model.lastName" name="lastName"
+        #surname="ngModel">
+      <div [hidden]="surname.valid || surname.pristine" class="alert alert-danger">
+        Cognome obbligatorio
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="firstName">Data di nascita</label>
+      <input type="date" class="form-control" id="birthDate" required [(ngModel)]="model.birthDate" name="birthDate"
+        #date="ngModel">
+      <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
+        Data di nascita obbligatorio
+      </div>
+    </div>
+    <button type="button" class="btn btn-default" (click)="newPatient(); patientForm.reset()">RESET</button>
+    <button type="submit" class="btn btn-success" [disabled]="!patientForm.form.valid">Submit</button>
+
+  </form>
+</div>

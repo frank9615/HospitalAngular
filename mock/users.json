@@ -9,19 +9,19 @@
   },
   {
     "id": "2",
-    "username": "carcher6o@barnesandnoble.com",
-    "password": "93",
+    "username": "b",
+    "password": "b",
     "firstName": "Gwen",
     "lastName": "Glen",
     "role": "DOCTOR"
   },
   {
     "id": "3",
-    "username": "lharriott2a@joomla.org",
-    "password": "98",
+    "username": "c",
+    "password": "c",
     "firstName": "Johannah",
     "lastName": "Stoppard",
-    "role": "ADMIN"
+    "role": "OPERATOR"
   },
   {
     "id": "4",
