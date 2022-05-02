@@ -16,9 +16,29 @@ export class MytableComponent implements OnInit {
   public headers: string[] = [];
 
   @Output()
-  public delete = new EventEmitter();
+  public delete = new EventEmitter<string>();
+
+  @Output()
+  public edit = new EventEmitter<string>();
+
+  @Output()
+  public addItem = new EventEmitter<string>();
 
   ngOnInit(): void {
   }
+
+
+  addNewItem(value: string): void {
+    this.addItem.emit(value);
+  }
+
+  onDelete(value: string): void {
+    this.delete.emit(value);
+  }
+
+  onEdit(value: string): void {
+    this.edit.emit(value);
+  }
+
 
 }

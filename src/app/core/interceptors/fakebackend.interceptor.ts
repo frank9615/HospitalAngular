@@ -279,7 +279,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
       if (request.url.match(/\/deleteuser\/\d+$/) && request.method === 'DELETE') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
-        const index = this.usersWOP.findIndex((x) => x.id === id);
+        const index = this.usersWOP.findIndex((x) => x.id == id);
         if (index !== -1) {
           this.usersWOP.splice(index, 1);
           return of(new HttpResponse({ status: 200, body: {} }));

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavModel } from 'src/app/shared/nav/nav.model';
 import { User } from 'src/app/core/models/User';
 import { UsersService } from 'src/app/core/services/users.service';
+import { first } from 'rxjs';
 
 @Component({
   selector: 'app-admin-users',
@@ -24,5 +25,17 @@ export class AdminUsersComponent implements OnInit {
       }
     );
   }
+
+  deleteItem(value: string): void {
+    let user: User = JSON.parse(JSON.stringify(value));
+    let id: number = user.id;
+
+    this.userService.deleteUser(id).pipe(first()).subscribe(
+      (user: User) => {
+        this.usersList = this.usersList.filter((u) => u.id !== id);
+      }
+    );
+  }
+
 
 }
