@@ -312,6 +312,24 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           return throwError(() => new Error('Triage not found'));
         }
       }
+
+      //Get Patients list from triage assigned to doctor id
+      if (request.url.match(/\/patients\/doctor\/\d+$/) && request.method === 'GET') {
+        const urlParts = request.url.split('/');
+        const id = parseInt(urlParts[urlParts.length - 1]);
+        let patientsdoctor: Patient[] = [];
+        const triagesdoctor = triages.filter((x: Triage) => { return x.doctorId === id });
+        if (triagesdoctor) {
+          triagesdoctor.forEach((x: Triage) => {
+            const patient: Patient = patients.find((y: Patient) => { return y.id == x.patientId });
+            patientsdoctor.push(patient);
+            console.log("🚀 ~ file: fakebackend.interceptor.ts ~ line 328 ~ FakeBackendInterceptor ~ triagesdoctor.forEach ~ patientsdoctor", patientsdoctor)
+          });
+          return of(new HttpResponse({ status: 200, body: patientsdoctor }));
+        } else {
+          return throwError(() => new Error('Patients not found'));
+        }
+      }
       return next.handle(request);
     }));
 

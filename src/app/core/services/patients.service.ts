@@ -33,4 +33,7 @@ export class PatientsService {
   deletePatient(id: number): Observable<Patient> {
     return this.http.delete<Patient>(`/deletepatient/${id}`);
   }
+  getPatientsAssignedToDoctor(doctorId: number): Observable<Patient[]> {
+    return this.http.get<Patient[]>(`/patients/doctor/${doctorId}`);
+  }
 }
