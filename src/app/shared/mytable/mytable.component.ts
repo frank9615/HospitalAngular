@@ -17,17 +17,17 @@ export class MytableComponent implements OnInit {
   public headers: string[] = [];
 
   @Input()
-  public actions: DataTableActions[] = []
+  public actions: DataTableActions[] = [];
 
   @Output()
-  public action = new EventEmitter<{}>();
+  public actionsemitter = new EventEmitter<{}>();
 
 
   ngOnInit(): void {
   }
 
   public onRowActionClicked(actionType: string, data: any) {
-    this.action.emit({ actionType, data });
+    this.actionsemitter.emit({ actionType, data });
   }
 
 }

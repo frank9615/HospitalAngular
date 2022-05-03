@@ -1,1 +1,2 @@
-<app-mytable [data]="usersList" [headers]="headersUsersList" (delete)="deleteItem($event)"></app-mytable>
+<app-mytable [data]="usersList" [headers]="headersUsersList" [actions]="actions"
+  (actionsemitter)="eventcatcher($event)"></app-mytable>

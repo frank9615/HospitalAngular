@@ -1,0 +1,51 @@
+<form (ngSubmit)="saveUser()" #patientForm="ngForm">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" placeholder="username" required [(ngModel)]="user.username"
+        name="username" #username="ngModel">
+      <div [hidden]="username.valid || username.pristine" class="alert alert-danger">
+        Username obbligatorio
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" required [(ngModel)]="user.password" name="username"
+        #password="ngModel">
+      <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+        Password obbligatorio
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="name">Nome</label>
+    <input type="text" class="form-control" id="name" placeholder="" required [(ngModel)]="user.firstName" name="name"
+      #name="ngModel">
+    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+      Nome obbligatorio
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="surname">Cognome</label>
+    <input type="text" class="form-control" id="surname" placeholder="" required [(ngModel)]="user.lastName"
+      name="surname" #surname="ngModel">
+    <div [hidden]="surname.valid || surname.pristine" class="alert alert-danger">
+      Cognome obbligatorio
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="role">Ruolo Utente</label>
+      <select class="form-control" id="role" required [(ngModel)]="user.role" name="role" #role="ngModel">
+        <option [value]="user.role" selected>{{user.role}}</option>
+        <option *ngFor="let role of getRoles()" [value]="role">{{role}}</option>
+        <div [hidden]="role.valid || role.pristine" class="alert alert-danger">
+          Ruolo obbligatorio
+        </div>
+      </select>
+    </div>
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Salva/Aggiorna</button>
+</form>

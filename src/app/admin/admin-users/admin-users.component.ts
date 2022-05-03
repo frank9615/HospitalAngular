@@ -4,6 +4,7 @@ import { User } from 'src/app/core/models/User';
 import { UsersService } from 'src/app/core/services/users.service';
 import { first } from 'rxjs';
 import { DataTableActions } from 'src/app/shared/mytable/table.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-users',
@@ -16,12 +17,19 @@ export class AdminUsersComponent implements OnInit {
   headersUsersList: string[] = [];
   actions: DataTableActions[] = [];
 
-  constructor(private userService: UsersService) {
-    this.actions.push({
+  constructor(
+    private userService: UsersService,
+    private router: Router) {
+    this.actions = [{
       label: 'Delete',
       actionIdToReturn: 'delete',
       icon: 'bi bi-trash'
-    });
+    },
+    {
+      label: 'Edit',
+      actionIdToReturn: 'edit',
+      icon: 'bi bi-pencil'
+    }];
   }
 
   ngOnInit(): void {
@@ -34,19 +42,24 @@ export class AdminUsersComponent implements OnInit {
   }
 
   eventcatcher(value: any): void {
-    //From value we can get the actionIdToReturn
-    console.log(value);
-    /*
-    let user: User = JSON.parse(JSON.stringify(value));
-    let id: number = user.id;
-
-    this.userService.deleteUser(id).pipe(first()).subscribe(
-      (user: User) => {
-        this.usersList = this.usersList.filter((u) => u.id !== id);
+    let objvalue: any = JSON.parse(JSON.stringify(value));
+    let actionIdToReturn: string = objvalue.actionType;
+    console.log(actionIdToReturn);
+    switch (actionIdToReturn) {
+      case 'delete': {
+        const id = objvalue.data.id;
+        console.log(id)
+        this.userService.deleteUser(id).pipe(first()).subscribe(
+          (user: User) => {
+            this.usersList = this.usersList.filter((u) => u.id !== id);
+          }
+        );
+        break;
       }
-    );
-    */
+      case 'edit': {
+        this.router.navigate(['/users/edit', objvalue.data.id]);
+        break;
+      }
+    }
   }
-
-
 }

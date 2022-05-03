@@ -94,14 +94,15 @@ export class FakeBackendInterceptor implements HttpInterceptor {
       if (request.url.match(/\/users\/\d+$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
-        const user = users.find((x: User) => x.id === id);
+        const user = users.find((x: User) => x.id == id);
         if (user) {
           const body = {
             id: user.id,
             username: user.username,
             firstName: user.firstName,
             lastName: user.lastName,
-            role: user.role
+            role: user.role,
+            password: user.password
           };
           return of(new HttpResponse({ status: 200, body }));
         } else {
@@ -240,9 +241,9 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
         const user = request.body;
-        const index = this.usersWOP.findIndex((x) => x.id === id);
+        const index = users.findIndex((x: User) => x.id == id);
         if (index !== -1) {
-          this.usersWOP[index] = user;
+          users[index] = user;
           return of(new HttpResponse({ status: 200, body: user }));
         } else {
           return throwError(() => new Error('User not found'));

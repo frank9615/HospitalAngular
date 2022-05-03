@@ -10,6 +10,9 @@ import { FakeBackendInterceptor } from './core/interceptors/fakebackend.intercep
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
 import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { SharedModule } from './shared/shared.module';
+import { EditUserComponent } from './pages/edit-user/edit-user.component';
+import { EditPatientComponent } from './pages/edit-patient/edit-patient.component';
+import { EditTriageComponent } from './pages/edit-triage/edit-triage.component';
 
 
 @NgModule({
@@ -17,6 +20,9 @@ import { SharedModule } from './shared/shared.module';
     AppComponent,
     LoginComponent,
     ErrorComponent,
+    EditUserComponent,
+    EditPatientComponent,
+    EditTriageComponent,
   ],
   imports: [
     BrowserModule,
