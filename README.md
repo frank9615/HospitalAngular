@@ -27,15 +27,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-### Cose da fare 
-1. passare al componente tabella un array di action dove le action che devono essere presenti sono :
-- edit/visualizza, 
-- delete
-
-
-2. Creare una schermata che visualizza il dettaglio di una riga della tabella, ad esempio per la tabella utenti mi deve visualizzare il dettaglio dell'utente con eventuale possibilità di effettuare una modifica ai dati.
--- Dunque le schermate da creare per visualizzare il dettaglio sono: 
-  - Dettaglio utente  // endpoint /api/users/:id
-  - Dettaglio paziente // endpoint /api/patients/:id
-  - Dettaglio Triage // endpoint /api/triages/:id
+### Cose che si potrebbero sistemare 
+- Avere un unico form per l'inserimento o la modifica di un paziente
 

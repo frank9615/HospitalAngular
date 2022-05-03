@@ -1,1 +1,27 @@
-<p>edit-triage works!</p>
+<div class="col-md-4 col-md-offset-4">
+  <h1>Nuovo Triage</h1>
+  <form (ngSubmit)="updateTriage()" #triageForm="ngForm">
+    <div class="form-group">
+      <label for="notes">Note</label>
+      <input type="text" class="form-control" id="notes" required [(ngModel)]="triage.notes" name="notes"
+        #notes="ngModel">
+      <div [hidden]="notes.valid || notes.pristine" class="alert alert-danger">
+        Note obbligatorie
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="triageColor">Colore Ingresso</label>
+      <select class="form-control" id="triageColor" required [(ngModel)]="triage.triageColor" name="triageColor"
+        #triageColor="ngModel">
+        <option [value]="triage.triageColor" selected>{{triage.triageColor}}</option>
+        <option *ngFor="let color of getTriageColor()" [value]="color">{{color}}</option>
+        <div [hidden]="triageColor.valid || triageColor.pristine" class="alert alert-danger">
+          Colore obbligatorio
+        </div>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-success">Aggiorna</button>
+
+  </form>
+</div>

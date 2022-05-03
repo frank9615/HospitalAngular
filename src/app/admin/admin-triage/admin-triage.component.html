@@ -1,1 +1,2 @@
-<app-mytable [data]="triagesList" [headers]="headersTriageList"></app-mytable>
+<app-mytable [data]="triagesList" [headers]="headersTriageList" [actions]="actions"
+  (actionsemitter)="eventcatcher($event)"></app-mytable>
