@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { DataTableActions } from './table.model';
 
 @Component({
   selector: 'app-mytable',
@@ -15,30 +16,18 @@ export class MytableComponent implements OnInit {
   @Input()
   public headers: string[] = [];
 
-  @Output()
-  public delete = new EventEmitter<string>();
+  @Input()
+  public actions: DataTableActions[] = []
 
   @Output()
-  public edit = new EventEmitter<string>();
+  public action = new EventEmitter<{}>();
 
-  @Output()
-  public addItem = new EventEmitter<string>();
 
   ngOnInit(): void {
   }
 
-
-  addNewItem(value: string): void {
-    this.addItem.emit(value);
+  public onRowActionClicked(actionType: string, data: any) {
+    this.action.emit({ actionType, data });
   }
-
-  onDelete(value: string): void {
-    this.delete.emit(value);
-  }
-
-  onEdit(value: string): void {
-    this.edit.emit(value);
-  }
-
 
 }

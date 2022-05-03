@@ -323,7 +323,6 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           triagesdoctor.forEach((x: Triage) => {
             const patient: Patient = patients.find((y: Patient) => { return y.id == x.patientId });
             patientsdoctor.push(patient);
-            console.log("🚀 ~ file: fakebackend.interceptor.ts ~ line 328 ~ FakeBackendInterceptor ~ triagesdoctor.forEach ~ patientsdoctor", patientsdoctor)
           });
           return of(new HttpResponse({ status: 200, body: patientsdoctor }));
         } else {
