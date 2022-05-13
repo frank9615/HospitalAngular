@@ -3,12 +3,15 @@ import { User } from '../models/User';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, map, Observable } from 'rxjs';
 
+import { environment } from '../../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
+  public baseUrl = environment.baseUrl;
 
   constructor(private http: HttpClient) {
     this.currentUserSubject = new BehaviorSubject<User>({} as any);
@@ -21,7 +24,7 @@ export class AuthService {
 
 
   login(username: string, password: string) {
-    return this.http.post<any>(`/users/authenticate`, { username, password })
+    return this.http.post<any>(`${this.baseUrl}/auth`, { username, password })
       .pipe(map(user => {
         // login successful if there's a jwt token in the response
         if (user && user.token) {
