@@ -4,5 +4,5 @@ export interface TriageRegistration {
   patientCf: string;
   notes: string;
   triageColor: TriageColor;
-  doctorId: number;
+  doctor_id: number;
 }

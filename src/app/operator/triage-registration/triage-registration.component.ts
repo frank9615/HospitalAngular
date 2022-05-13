@@ -50,7 +50,7 @@ export class TriageRegistrationComponent implements OnInit {
       patientCf: '',
       notes: '',
       triageColor: TriageColor.GREEN,
-      doctorId: 0
+      doctor_id: 0
     }
     this.model = modelempty;
     return modelempty;
@@ -60,19 +60,19 @@ export class TriageRegistrationComponent implements OnInit {
     console.log(this.model);
     this.submitted = true;
     // From TriageRegistration to Triage
-    //get operatorid from localstorage
+    //get operator_id from localstorage
     let triage: Triage = {
       notes: this.model.notes,
       triageColor: this.model.triageColor,
-      doctorId: this.model.doctorId,
+      doctor_id: this.model.doctor_id,
       state: false,
-      operatorId: this.authService.currentUserValue.id
+      operator_id: this.authService.currentUserValue.id
     };
     //fetch patient from cf
     this.patientsService.getPatientByCf(this.model.patientCf).pipe(first()).subscribe(
       (patient: Patient) => {
         if (patient) {
-          triage.patientId = patient.id;
+          triage.patient_id = patient.id;
           this.triageService.addTriage(triage).pipe(first()).subscribe(
             (triagedata: Triage) => {
               this.router.navigate(['/triage-list']);

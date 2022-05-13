@@ -38,18 +38,18 @@ const patientsIds = patients.map(patient => patient.id);
 
 let triages = [];
 for (let i = 1; i <= num; i++) {
-  const doctorId = Number(getRandomId(doctorsIds));
-  const patientId = Number(getRandomId(patientsIds));
-  const operatorId = Number(getRandomId(operatorsIds));
+  const doctor_id = Number(getRandomId(doctorsIds));
+  const patient_id = Number(getRandomId(patientsIds));
+  const operator_id = Number(getRandomId(operatorsIds));
   const triageDate = getRandomDate(new Date(2017, 0, 1), new Date());
   const state = randomBoolean();
   const notes = loremIpsum(Math.floor(Math.random() * 20));
   const triageColor = randomTriageColor();
   const triage = {
     id: i,
-    doctorId,
-    patientId,
-    operatorId,
+    doctor_id,
+    patient_id,
+    operator_id,
     triageDate,
     state,
     notes,

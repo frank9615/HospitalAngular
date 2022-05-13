@@ -2,11 +2,11 @@ import { TriageColor } from "./TriageColor";
 
 export interface Triage {
   id?: number;
-  patientId?: number;
+  patient_id?: number;
   triageDate?: Date;
   triageColor: TriageColor;
   notes: string;
-  doctorId?: number;
-  operatorId?: number;
+  doctor_id?: number;
+  operator_id?: number;
   state: boolean;
 }

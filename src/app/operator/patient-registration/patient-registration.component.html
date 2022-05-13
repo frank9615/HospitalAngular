@@ -11,17 +11,16 @@
     </div>
 
     <div class="form-group">
-      <label for="firstName">Nome</label>
-      <input type="text" class="form-control" id="firstName" required [(ngModel)]="model.firstName" name="firstName"
-        #name="ngModel">
+      <label for="name">Nome</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
       <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
         Nome obbligatorio
       </div>
     </div>
 
     <div class="form-group">
-      <label for="lastName">Cognome</label>
-      <input type="text" class="form-control" id="lastName" required [(ngModel)]="model.lastName" name="lastName"
+      <label for="surname">Cognome</label>
+      <input type="text" class="form-control" id="surname" required [(ngModel)]="model.surname" name="surname"
         #surname="ngModel">
       <div [hidden]="surname.valid || surname.pristine" class="alert alert-danger">
         Cognome obbligatorio
@@ -29,8 +28,8 @@
     </div>
 
     <div class="form-group">
-      <label for="firstName">Data di nascita</label>
-      <input type="date" class="form-control" id="birthDate" required [(ngModel)]="model.birthDate" name="birthDate"
+      <label for="name">Data di nascita</label>
+      <input type="date" class="form-control" id="birthday" required [(ngModel)]="model.birthday" name="birthday"
         #date="ngModel">
       <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
         Data di nascita obbligatorio
@@ -38,6 +37,8 @@
     </div>
     <button type="button" class="btn btn-default" (click)="newPatient(); patientForm.reset()">RESET</button>
     <button type="submit" class="btn btn-success" [disabled]="!patientForm.form.valid">Submit</button>
-
   </form>
+  <div class="alert" [ngClass]="alerttype" role="alert" *ngIf="status">
+    {{status}}
+  </div>
 </div>

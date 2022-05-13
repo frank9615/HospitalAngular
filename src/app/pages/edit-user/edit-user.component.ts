@@ -45,8 +45,8 @@ export class EditUserComponent implements OnInit {
       id: 0,
       username: '',
       password: '',
-      firstName: '',
-      lastName: '',
+      name: '',
+      surname: '',
       role: Role.Operator,
     };
     this.user = user;

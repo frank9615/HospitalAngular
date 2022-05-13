@@ -15,16 +15,18 @@ export class PatientRegistrationComponent implements OnInit {
   loading = false;
   submitted = false;
   model: Patient;
+  status: string = '';
+  alerttype: string = '';
 
   constructor(
     private formBuilder: FormBuilder,
     private patientsService: PatientsService,
     private router: Router) {
     this.model = {
-      firstName: 'Mario',
-      lastName: 'Rossi',
+      name: 'Mario',
+      surname: 'Rossi',
       cf: 'RSSMRA70A01G273X',
-      birthDate: new Date()
+      birthday: new Date()
     };
 
   }
@@ -34,7 +36,7 @@ export class PatientRegistrationComponent implements OnInit {
   }
 
   newPatient(): void {
-    this.model = { firstName: '', lastName: '', cf: '', birthDate: new Date() };
+    this.model = { name: '', surname: '', cf: '', birthday: new Date() };
   }
 
 
@@ -42,15 +44,14 @@ export class PatientRegistrationComponent implements OnInit {
     console.log(this.model);
     this.submitted = true;
 
-    this.patientsService.addPatient(this.model).pipe(first()).subscribe(
-      data => {
-        this.router.navigate(['/operator/patients']);
-      },
-      error => {
-        this.loading = false;
-      }
-    );
-
+    this.patientsService.addPatient(this.model).pipe(first()).subscribe((_data) => {
+      this.status = 'success';
+      this.alerttype = 'alert-success';
+    },
+      (_error) => {
+        this.status = 'error';
+        this.alerttype = 'alert-danger';
+      });
   }
 
 }

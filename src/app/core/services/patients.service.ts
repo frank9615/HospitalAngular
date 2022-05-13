@@ -24,8 +24,8 @@ export class PatientsService {
     return this.http.get<Patient>(`${this.baseUrl}/api/patients/search/cf/${patientCf}`);
   }
 
-  addPatient(patient: Patient): Observable<Patient> {
-    return this.http.post<Patient>(`${this.baseUrl}/api/patients/new`, patient);
+  addPatient(patient: Patient): Observable<String> {
+    return this.http.post<String>(`${this.baseUrl}/api/patients/new`, patient);
   }
 
   updatePatient(patient: Patient): Observable<Patient> {
@@ -35,7 +35,7 @@ export class PatientsService {
   deletePatient(id: number): Observable<Patient> {
     return this.http.delete<Patient>(`${this.baseUrl}/api/patients/delete/${id}`);
   }
-  getPatientsAssignedToDoctor(doctorId: number): Observable<Patient[]> {
-    return this.http.get<Patient[]>(`${this.baseUrl}/api/patients/assigned/doctor/id/${doctorId}`);
+  getPatientsAssignedToDoctor(doctor_id: number): Observable<Patient[]> {
+    return this.http.get<Patient[]>(`${this.baseUrl}/api/patients/assigned/doctor/id/${doctor_id}`);
   }
 }

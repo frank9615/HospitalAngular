@@ -20,15 +20,15 @@ export class TriagesService {
     return this.http.get<Triage>(`${this.baseUrl}/api/triages/search/id${id}`);
   }
 
-  getTriagesByDoctorId(id: number): Observable<Triage[]> {
+  getTriagesBydoctor_id(id: number): Observable<Triage[]> {
     return this.http.get<Triage[]>(`${this.baseUrl}/api/triages/of/doctor/${id}`);
   }
 
-  getTriagesByOperatorId(id: number): Observable<Triage[]> {
+  getTriagesByoperator_id(id: number): Observable<Triage[]> {
     return this.http.get<Triage[]>(`${this.baseUrl}/api/triages/of/operator/${id}`);
   }
 
-  getTriagesByPatientId(id: number): Observable<Triage[]> {
+  getTriagesBypatient_id(id: number): Observable<Triage[]> {
     return this.http.get<Triage[]>(`${this.baseUrl}/api/triages/of/patient/${id}`);
   }
 

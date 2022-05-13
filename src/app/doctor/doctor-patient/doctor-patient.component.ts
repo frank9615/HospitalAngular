@@ -32,8 +32,8 @@ export class DoctorPatientComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    let doctorid = this.authService.currentUserValue.id;
-    this.patientService.getPatientsAssignedToDoctor(doctorid).pipe(first()).subscribe(
+    let doctor_id = this.authService.currentUserValue.id;
+    this.patientService.getPatientsAssignedToDoctor(doctor_id).pipe(first()).subscribe(
       (patients: Patient[]) => {
         this.patientList = patients;
         this.headersPatientList = Object.getOwnPropertyNames(patients[0]);
@@ -48,7 +48,7 @@ export class DoctorPatientComponent implements OnInit {
     switch (actionIdToReturn) {
       case 'view': {
         //This id is the patient id but we need the traige id
-        this.triagesService.getTriagesByPatientId(objvalue.data.id).pipe(first()).subscribe(
+        this.triagesService.getTriagesBypatient_id(objvalue.data.id).pipe(first()).subscribe(
           (triages: Triage[]) => {
             //Get Last Triage order by id
             let triage: Triage = triages.reduce((prev: Triage, curr: Triage) => {

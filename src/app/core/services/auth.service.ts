@@ -11,7 +11,7 @@ import { environment } from '../../../environments/environment';
 export class AuthService {
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
-  public baseUrl = environment.baseUrl;
+  public baseUrl = environment.authbaseUrl;
 
   constructor(private http: HttpClient) {
     this.currentUserSubject = new BehaviorSubject<User>({} as any);

@@ -20,9 +20,9 @@ export class EditPatientComponent implements OnInit {
   newPatient(): Patient {
     let patient = {
       cf: '',
-      firstName: '',
-      lastName: '',
-      birthDate: new Date(),
+      name: '',
+      surname: '',
+      birthday: new Date(),
     };
     this.patient = patient;
     return patient;

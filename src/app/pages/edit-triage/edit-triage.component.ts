@@ -51,6 +51,7 @@ export class EditTriageComponent implements OnInit {
 
   updateTriage(): void {
     if (this.triage) {
+      this.triage.id = this.id;
       this.triagesService.updateTriage(this.triage).pipe(first()).subscribe(
         (triage: Triage) => {
           this.triage = triage;

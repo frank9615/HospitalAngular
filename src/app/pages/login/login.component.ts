@@ -26,8 +26,8 @@ export class LoginComponent implements OnInit {
   login(): void {
     this.authService.login(this.username, this.password)
       .pipe(first())
-      .subscribe(
-        (data) => {
+      .subscribe({
+        next: (data) => {
           console.log(data);
           switch (data.role) {
             case 'ADMIN':
@@ -43,10 +43,10 @@ export class LoginComponent implements OnInit {
               this.error = 'Invalid credentials';
           }
         },
-        (error) => {
+        error: () => {
           this.error = "Invalid username or password";
         }
-      )
+      });
 
   }
 

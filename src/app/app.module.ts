@@ -34,7 +34,7 @@ import { EditTriageComponent } from './pages/edit-triage/edit-triage.component';
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: FakeBackendInterceptor, multi: true }
+    /*{ provide: HTTP_INTERCEPTORS, useClass: FakeBackendInterceptor, multi: true }*/
   ],
   bootstrap: [AppComponent]
 })

@@ -27,15 +27,15 @@ export class FakeBackendInterceptor implements HttpInterceptor {
       return {
         id: user.id,
         username: user.username,
-        firstName: user.firstName,
-        lastName: user.lastName,
+        name: user.name,
+        surname: user.surname,
         role: user.role,
       };
     });
   }
 
   //Ipotizzo che i dati mock non siano ordinati
-  private getLastPatientId(): number {
+  private getLastpatient_id(): number {
     return patients.reduce((max: number, p: Patient) => {
       if (p.id) {
         return p.id > max ? p.id : max, 0;
@@ -65,8 +65,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           const body = {
             id: user.id,
             username: user.username,
-            firstName: user.firstName,
-            lastName: user.lastName,
+            name: user.name,
+            surname: user.surname,
             token: 'fake-jwt-token',
             role: user.role
           };
@@ -99,8 +99,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           const body = {
             id: user.id,
             username: user.username,
-            firstName: user.firstName,
-            lastName: user.lastName,
+            name: user.name,
+            surname: user.surname,
             role: user.role,
             password: user.password
           };
@@ -119,10 +119,10 @@ export class FakeBackendInterceptor implements HttpInterceptor {
           const body = {
             id: patient.id,
             cf: patient.cf,
-            firstName: patient.firstName,
-            lastName: patient.lastName,
-            birthDate: patient.birthDate,
-            registrationDate: patient.registrationDate
+            name: patient.name,
+            surname: patient.surname,
+            birthday: patient.birthday,
+            registrationdate: patient.registrationdate
           };
           return of(new HttpResponse({ status: 200, body }));
         } else {
@@ -137,9 +137,9 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         if (triage) {
           const body = {
             id: triage.id,
-            patientId: triage.patientId,
-            doctorId: triage.doctorId,
-            operatorId: triage.operatorId,
+            patient_id: triage.patient_id,
+            doctor_id: triage.doctor_id,
+            operator_id: triage.operator_id,
             triageDate: triage.triageDate,
             triageColor: triage.triageColor,
             notes: triage.notes,
@@ -154,7 +154,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
       if (request.url.match(/\/triages\/\d+\/doctor$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 2]);
-        const triageAssociated = triages.filter((x: any) => x.doctorId === id);
+        const triageAssociated = triages.filter((x: any) => x.doctor_id === id);
         if (triageAssociated) {
           return of(new HttpResponse({ status: 200, body: triageAssociated }));
         } else {
@@ -165,7 +165,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
       if (request.url.match(/\/triages\/\d+\/operator$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 2]);
-        const triageAssociated = triages.filter((x: any) => x.operatorId === id);
+        const triageAssociated = triages.filter((x: any) => x.operator_id === id);
         if (triageAssociated) {
           return of(new HttpResponse({ status: 200, body: triageAssociated }));
         } else {
@@ -176,7 +176,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
       if (request.url.match(/\/triages\/\d+\/patient$/) && request.method === 'GET') {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 2]);
-        const triageAssociated = triages.filter((x: any) => x.patientId === id);
+        const triageAssociated = triages.filter((x: any) => x.patient_id === id);
         if (triageAssociated) {
           return of(new HttpResponse({ status: 200, body: triageAssociated }));
         } else {
@@ -223,8 +223,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
       //Add Patient (only for Operator)✅
       if (request.url.match(/\/addpatient$/) && request.method === 'POST') {
         let patient = request.body;
-        patient.id = this.getLastPatientId() + 1;
-        patient.registrationDate = new Date();
+        patient.id = this.getLastpatient_id() + 1;
+        patient.registrationdate = new Date();
         patients.push(patient);
         return of(new HttpResponse({ status: 200, body: patient }));
       }
@@ -319,10 +319,10 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         const urlParts = request.url.split('/');
         const id = parseInt(urlParts[urlParts.length - 1]);
         let patientsdoctor: Patient[] = [];
-        const triagesdoctor = triages.filter((x: Triage) => { return x.doctorId === id });
+        const triagesdoctor = triages.filter((x: Triage) => { return x.doctor_id === id });
         if (triagesdoctor) {
           triagesdoctor.forEach((x: Triage) => {
-            const patient: Patient = patients.find((y: Patient) => { return y.id == x.patientId });
+            const patient: Patient = patients.find((y: Patient) => { return y.id == x.patient_id });
             patientsdoctor.push(patient);
           });
           return of(new HttpResponse({ status: 200, body: patientsdoctor }));
